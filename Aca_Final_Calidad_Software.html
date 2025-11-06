@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACA FINAL - Calidad de Software | Entornos Educativos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-laptop-code me-2"></i>Calidad de Software
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">Introducción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#components">Componentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#demo">Aplicativo Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#evaluation">Evaluación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conclusions">Conclusiones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Calidad de Software en Entornos Educativos</h1>
+            <p class="lead mb-4">Un aplicativo web para comprender, evaluar y mejorar la calidad del software en proyectos educativos y ambientes reales</p>
+            <a href="#evaluation" class="btn btn-light btn-lg px-4">Evaluar Calidad</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Introducción -->
+        <section id="intro" class="mb-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title text-center">¿Qué es la Calidad de Software?</h2>
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <p class="card-text">La <strong>calidad de software</strong> es el grado en el que un sistema, componente o proceso cumple con los requisitos especificados y las expectativas del usuario, considerando atributos como funcionalidad, fiabilidad, usabilidad, eficiencia, mantenibilidad y portabilidad.</p>
+                            
+                            <h5 class="mt-4">Contextualización para proyectos educativos</h5>
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <i class="fas fa-graduation-cap text-primary me-3 mt-1"></i>
+                                        <div>
+                                            <h6>En Entornos Educativos</h6>
+                                            <p class="small">Garantiza la disponibilidad de materiales didácticos fiables, la integridad de exámenes y la usabilidad para estudiantes y docentes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <i class="fas fa-building text-primary me-3 mt-1"></i>
+                                        <div>
+                                            <h6>En Ambientes Reales</h6>
+                                            <p class="small">Reduce errores, facilita mantenimiento y cumple con normas regulatorias en centros educativos y laboratorios.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Componentes -->
+        <section id="components" class="mb-5">
+            <h2 class="section-title text-center">Componentes de Calidad de Software</h2>
+            
+            <div class="row">
+                <!-- Normas -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <i class="fas fa-file-alt me-2"></i> Normas
+                        </div>
+                        <div class="card-body">
+                            <p>Conjunto de reglas y directrices establecidas para el desarrollo de software:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> ISO/IEC 25010
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> ISO/IEC 9126
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> Estándares IEEE
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modelos -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <i class="fas fa-sitemap me-2"></i> Modelos
+                        </div>
+                        <div class="card-body">
+                            <p>Estructuras para evaluar y mejorar procesos de desarrollo:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> CMMI (Capability Maturity Model)
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> TMMi (Test Maturity Model)
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> Modelos de calidad
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Estándares -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <i class="fas fa-code-branch me-2"></i> Estándares
+                        </div>
+                        <div class="card-body">
+                            <p>Especificaciones técnicas para desarrollo consistente:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> Estándares de codificación
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> WCAG (accesibilidad web)
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> Protocolos y formatos
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Código y Programación -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <i class="fas fa-code me-2"></i> Código y Programación
+                        </div>
+                        <div class="card-body">
+                            <p>Prácticas para desarrollo de código mantenible:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> Control de versiones (Git)
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> Linters y formateadores
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> Revisión de código
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pruebas y Evaluación -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <i class="fas fa-vial me-2"></i> Pruebas y Evaluación
+                        </div>
+                        <div class="card-body">
+                            <p>Verificación y validación del software:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> Pruebas unitarias
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> Pruebas de integración
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> Pruebas de usabilidad
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beneficios -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <i class="fas fa-chart-line me-2"></i> Beneficios
+                        </div>
+                        <div class="card-body">
+                            <p>Ventajas de aplicar calidad de software:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> Reducción de errores
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> Mejor mantenibilidad
+                                </li>
+                                <li class="list-group-item px-0">
+                                    <i class="fas fa-check-circle text-success me-2"></i> Mayor satisfacción del usuario
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aplicativo Demo -->
+        <section id="demo" class="mb-5">
+            <h2 class="section-title text-center">Aplicativo Demo: Quiz Educativo</h2>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-puzzle-piece me-2"></i> Quiz Interactivo
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Este es el aplicativo que evaluaremos. Es un micro-aplicativo educativo (quiz) integrado en la misma página para facilitar la demostración.</p>
+                            
+                            <div id="quiz" class="mb-4 p-3 border rounded">
+                                <div id="quiz-area">
+                                    <div class="mb-3">
+                                        <h5 id="q-title">Pregunta</h5>
+                                    </div>
+                                    <div id="q-choices" class="mb-3"></div>
+                                    <button id="q-next" class="btn btn-primary">Siguiente Pregunta</button>
+                                    <div id="q-result" class="mt-3 alert alert-info" style="display: none;"></div>
+                                </div>
+                            </div>
+                            
+                            <button id="run-tests" class="btn btn-success">
+                                <i class="fas fa-play-circle me-2"></i>Ejecutar Pruebas Automatizadas
+                            </button>
+                            <div id="test-results" class="mt-4"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-video me-2"></i> Video Explicativo
+                        </div>
+                        <div class="card-body">
+                            <p>Instrucciones para el video de los integrantes (hasta 5 minutos):</p>
+                            <ul class="small">
+                                <li>Duración máxima: 5 minutos</li>
+                                <li>Explicar qué es la calidad de software y cada componente</li>
+                                <li>Mostrar beneficios y resultados de la evaluación</li>
+                                <li>Formato MP4, resolución 720p o 1080p</li>
+                                <li>Incluir título con nombres de integrantes y fecha</li>
+                            </ul>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Link del video</label>
+                                <input id="video-link" class="form-control" placeholder="https://...">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mt-3">
+                        <div class="card-header">
+                            <i class="fas fa-file-pdf me-2"></i> Generar Documento APA
+                        </div>
+                        <div class="card-body">
+                            <p>Genera un documento PDF en formato APA con todos los detalles del proyecto.</p>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Autor(es) / Integrantes</label>
+                                <input id="authors" class="form-control" placeholder="Ej: Leonardo Rodriguez T.; Nombre 2; Nombre 3" value="Leonardo Rodriguez T.">
+                            </div>
+                            
+                            <button id="generate-pdf" class="btn btn-outline-primary w-100">
+                                <i class="fas fa-download me-2"></i>Generar PDF APA
+                            </button>
+                            <div id="pdf-status" class="mt-2 small text-center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evaluación -->
+        <section id="evaluation" class="mb-5">
+            <h2 class="section-title text-center">Evaluación Cuantitativa de Calidad</h2>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-calculator me-2"></i> Modelo de Evaluación
+                        </div>
+                        <div class="card-body">
+                            <p>Asigne una puntuación de 0 a 5 a cada componente. El resultado final será un promedio ponderado (0-5).</p>
+                            
+                            <form id="evaluation-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Normas (peso 10%)</label>
+                                            <input type="range" min="0" max="5" step="0.1" id="f-normas" class="form-range" value="4">
+                                            <div class="d-flex justify-content-between">
+                                                <small>0</small>
+                                                <small id="f-normas-value">4.0</small>
+                                                <small>5</small>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Modelos (peso 15%)</label>
+                                            <input type="range" min="0" max="5" step="0.1" id="f-modelos" class="form-range" value="3.5">
+                                            <div class="d-flex justify-content-between">
+                                                <small>0</small>
+                                                <small id="f-modelos-value">3.5</small>
+                                                <small>5</small>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Estándares (peso 15%)</label>
+                                            <input type="range" min="0" max="5" step="0.1" id="f-estandares" class="form-range" value="4">
+                                            <div class="d-flex justify-content-between">
+                                                <small>0</small>
+                                                <small id="f-estandares-value">4.0</small>
+                                                <small>5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Código y programación (peso 25%)</label>
+                                            <input type="range" min="0" max="5" step="0.1" id="f-codigo" class="form-range" value="3">
+                                            <div class="d-flex justify-content-between">
+                                                <small>0</small>
+                                                <small id="f-codigo-value">3.0</small>
+                                                <small>5</small>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Pruebas y evaluación (peso 25%)</label>
+                                            <input type="range" min="0" max="5" step="0.1" id="f-pruebas" class="form-range" value="3.8">
+                                            <div class="d-flex justify-content-between">
+                                                <small>0</small>
+                                                <small id="f-pruebas-value">3.8</small>
+                                                <small>5</small>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Documentación/Mantenimiento (peso 10%)</label>
+                                            <input type="range" min="0" max="5" step="0.1" id="f-doc" class="form-range" value="4">
+                                            <div class="d-flex justify-content-between">
+                                                <small>0</small>
+                                                <small id="f-doc-value">4.0</small>
+                                                <small>5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button id="calc-score" class="btn btn-primary w-100 mt-3">
+                                    <i class="fas fa-chart-bar me-2"></i>Calcular Calificación Final (0-5)
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-chart-pie me-2"></i> Resultado de Evaluación
+                        </div>
+                        <div class="card-body text-center">
+                            <div id="final-score" class="score-display">---</div>
+                            <div id="score-interpretation" class="interpretation">Esperando evaluación...</div>
+                            
+                            <div class="mt-4">
+                                <h6>Distribución de Puntos</h6>
+                                <canvas id="score-chart" width="300" height="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mt-3">
+                        <div class="card-header">
+                            <i class="fas fa-clipboard-check me-2"></i> Resultados de Pruebas
+                        </div>
+                        <div class="card-body">
+                            <div id="auto-eval-summary" class="text-center">
+                                <p class="text-muted">No se han ejecutado pruebas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusiones y Recomendaciones -->
+        <section id="conclusions" class="mb-5">
+            <h2 class="section-title text-center">Conclusiones y Recomendaciones</h2>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-flag-checkered me-2"></i> Conclusiones
+                        </div>
+                        <div class="card-body">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <h6>Calidad como factor crítico</h6>
+                                    <p class="small">La calidad de software es fundamental en entornos educativos para garantizar confiabilidad, accesibilidad y experiencia de usuario consistente.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h6>Evaluación cuantitativa</h6>
+                                    <p class="small">El modelo cuantitativo permite medir objetivamente la madurez de los proyectos y establecer puntos de mejora específicos.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h6>Impacto de buenas prácticas</h6>
+                                    <p class="small">La aplicación sistemática de normas, estándares y pruebas impacta directamente en la reducción de errores y costos de mantenimiento.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-lightbulb me-2"></i> Recomendaciones
+                        </div>
+                        <div class="card-body">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <h6>Integración temprana</h6>
+                                    <p class="small">Implementar controles de calidad desde las primeras fases del desarrollo, no como etapa final.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h6>Capacitación continua</h6>
+                                    <p class="small">Capacitar al equipo en normas ISO 25010, estándares de accesibilidad y mejores prácticas de desarrollo.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h6>Métricas continuas</h6>
+                                    <p class="small">Establecer métricas de calidad continuas a lo largo del ciclo de vida del software para monitoreo constante.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <h6>Automatización</h6>
+                                    <p class="small">Implementar pipelines CI/CD con pruebas automatizadas para detectar problemas tempranamente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-laptop-code me-2"></i>Calidad de Software</h5>
+                    <p>Aplicativo web para evaluación de calidad de software en entornos educativos.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Entrega Final - Leonardo Rodriguez T</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #2ecc71;
+            --warning: #f39c12;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary) !important;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            color: var(--primary);
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+        
+        .card-header {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+            border-bottom: none;
+            padding: 15px 20px;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+        
+        .metric-badge {
+            display: inline-block;
+            padding: 8px 15px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 20px;
+            font-weight: 600;
+            margin: 5px;
+        }
+        
+        .progress {
+            height: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .btn-primary {
+            background: var(--secondary);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-success {
+            background: var(--success);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+        
+        .quiz-option {
+            padding: 12px 15px;
+            margin: 8px 0;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .quiz-option:hover {
+            border-color: var(--secondary);
+            background: #f8f9fa;
+        }
+        
+        .quiz-option.selected {
+            border-color: var(--secondary);
+            background: rgba(52, 152, 219, 0.1);
+        }
+        
+        .test-result {
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .test-pass {
+            background: rgba(46, 204, 113, 0.15);
+            border-left: 4px solid var(--success);
+        }
+        
+        .test-fail {
+            background: rgba(231, 76, 60, 0.15);
+            border-left: 4px solid var(--accent);
+        }
+        
+        .score-display {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .interpretation {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            background: #f8f9fa;
+        }
+        
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--secondary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+        }
+        
+        .floating-btn:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 30px 0;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -33px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--secondary);
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+            
+            .score-display {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Floating Action Button -->
+    <a href="#" class="floating-btn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+        // Quiz data
+        const quizData = [
+            {q: '¿Cuál es la capital de Colombia?', choices: ['Bogotá','Medellín','Cali','Cartagena'], a:0},
+            {q: '¿HTML es un lenguaje de programación?', choices: ['Sí','No'], a:1},
+            {q: '¿Qué significa QA en software?', choices: ['Quality Assurance','Quick Audit','Query Access'], a:0}
+        ];
+        
+        let qi = 0; 
+        let score = 0;
+        let selectedOption = null;
+        
+        // Initialize quiz
+        function renderQ(){
+            const q = quizData[qi];
+            document.getElementById('q-title').innerText = `Pregunta ${qi+1}: ${q.q}`;
+            const ch = document.getElementById('q-choices'); 
+            ch.innerHTML = '';
+            
+            q.choices.forEach((c, i) => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'quiz-option';
+                optionDiv.innerHTML = `
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="choice" id="opt${i}" value="${i}">
+                        <label class="form-check-label" for="opt${i}">${c}</label>
+                    </div>
+                `;
+                optionDiv.addEventListener('click', function() {
+                    // Remove selected class from all options
+                    document.querySelectorAll('.quiz-option').forEach(opt => {
+                        opt.classList.remove('selected');
+                    });
+                    // Add selected class to clicked option
+                    this.classList.add('selected');
+                    // Check the radio button
+                    this.querySelector('input').checked = true;
+                    selectedOption = i;
+                });
+                ch.appendChild(optionDiv);
+            });
+            
+            document.getElementById('q-result').style.display = 'none';
+        }
+        
+        // Next question button
+        document.getElementById('q-next').addEventListener('click', () => {
+            if(selectedOption === null) { 
+                alert('Por favor, seleccione una opción antes de continuar.'); 
+                return; 
+            }
+            
+            if(selectedOption === quizData[qi].a) score++;
+            
+            // Show result
+            const resultDiv = document.getElementById('q-result');
+            if(selectedOption === quizData[qi].a) {
+                resultDiv.className = 'mt-3 alert alert-success';
+                resultDiv.innerHTML = '<i class="fas fa-check-circle me-2"></i>¡Respuesta correcta!';
+            } else {
+                resultDiv.className = 'mt-3 alert alert-danger';
+                resultDiv.innerHTML = `<i class="fas fa-times-circle me-2"></i>Incorrecto. La respuesta correcta es: ${quizData[qi].choices[quizData[qi].a]}`;
+            }
+            resultDiv.style.display = 'block';
+            
+            // Move to next question or finish
+            setTimeout(() => {
+                qi++;
+                selectedOption = null;
+                
+                if(qi >= quizData.length) {
+                    document.getElementById('quiz-area').innerHTML = `
+                        <div class="text-center p-4">
+                            <h4>Quiz Completado</h4>
+                            <div class="score-display">${score}/${quizData.length}</div>
+                            <p>${score === quizData.length ? '¡Excelente! Perfecto.' : score >= quizData.length/2 ? 'Buen trabajo.' : 'Sigue practicando.'}</p>
+                            <button id="restart-quiz" class="btn btn-primary">Reiniciar Quiz</button>
+                        </div>
+                    `;
+                    
+                    document.getElementById('restart-quiz').addEventListener('click', function() {
+                        qi = 0;
+                        score = 0;
+                        renderQ();
+                    });
+                } else {
+                    renderQ();
+                }
+            }, 1500);
+        });
+        
+        // Initial render
+        renderQ();
+        
+        // Update range values in real-time
+        const rangeInputs = document.querySelectorAll('input[type="range"]');
+        rangeInputs.forEach(input => {
+            const valueDisplay = document.getElementById(`${input.id}-value`);
+            valueDisplay.textContent = input.value;
+            
+            input.addEventListener('input', function() {
+                valueDisplay.textContent = this.value;
+            });
+        });
+        
+        // Automated tests (simulated)
+        function runAutomatedTests(){
+            // Simulate a set of tests for the quiz app
+            const tests = [
+                {name:'Carga de preguntas', pass:true},
+                {name:'Navegación entre preguntas', pass:true},
+                {name:'Selección de opciones', pass:true},
+                {name:'Cálculo de puntaje', pass:false}, // introduce 1 failed test to show effect
+                {name:'Responsive (mobile)', pass:true}
+            ];
+            
+            const resultsDiv = document.getElementById('test-results');
+            resultsDiv.innerHTML = '<h5>Resultados de Pruebas Automatizadas</h5>';
+            
+            let passed = 0;
+            tests.forEach(t => {
+                const testDiv = document.createElement('div');
+                testDiv.className = `test-result ${t.pass ? 'test-pass' : 'test-fail'}`;
+                testDiv.innerHTML = `
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>${t.name}</span>
+                        <span class="badge ${t.pass ? 'bg-success' : 'bg-danger'}">${t.pass ? 'PASS' : 'FAIL'}</span>
+                    </div>
+                `;
+                resultsDiv.appendChild(testDiv);
+                
+                if(t.pass) passed++;
+            });
+            
+            const summary = document.createElement('div');
+            summary.className = 'mt-3 p-3 bg-light rounded';
+            summary.innerHTML = `<strong>Resumen: ${passed} / ${tests.length} pruebas aprobadas</strong>`;
+            resultsDiv.appendChild(summary);
+            
+            // Translate into an evaluation metric for 'Pruebas y evaluación' (0-5)
+            const pruebasScore = (passed/tests.length)*5;
+            document.getElementById('auto-eval-summary').innerHTML = `
+                <div class="p-3 bg-light rounded">
+                    <h6>Pruebas Automáticas</h6>
+                    <div class="metric-badge bg-primary">${passed}/${tests.length} aprobadas</div>
+                    <p class="mt-2 mb-0">Puntaje estimado para 'Pruebas y evaluación': <strong>${pruebasScore.toFixed(2)} / 5</strong></p>
+                </div>
+            `;
+            
+            return pruebasScore;
+        }
+        
+        document.getElementById('run-tests').addEventListener('click', () => {
+            const ps = runAutomatedTests();
+            // update the pruebas field in form to reflect automated run
+            document.getElementById('f-pruebas').value = ps.toFixed(2);
+            document.getElementById('f-pruebas-value').textContent = ps.toFixed(2);
+        });
+        
+        // Model: weights
+        const weights = {
+            normas: 0.10, 
+            modelos: 0.15, 
+            estandares: 0.15, 
+            codigo: 0.25, 
+            pruebas: 0.25, 
+            doc: 0.10
+        };
+        
+        // Calculate final score
+        document.getElementById('calc-score').addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            const vals = {
+                normas: Number(document.getElementById('f-normas').value) || 0,
+                modelos: Number(document.getElementById('f-modelos').value) || 0,
+                estandares: Number(document.getElementById('f-estandares').value) || 0,
+                codigo: Number(document.getElementById('f-codigo').value) || 0,
+                pruebas: Number(document.getElementById('f-pruebas').value) || 0,
+                doc: Number(document.getElementById('f-doc').value) || 0
+            };
+            
+            // Validate 0-5
+            for(const k in vals) { 
+                if(vals[k] < 0) vals[k] = 0; 
+                if(vals[k] > 5) vals[k] = 5; 
+            }
+            
+            // Weighted average (0-5)
+            let total = 0;
+            for(const k in vals) total += vals[k] * weights[k];
+            const final = total.toFixed(2);
+            
+            document.getElementById('final-score').innerText = final + ' / 5';
+            
+            // Interpretation
+            let interp = '';
+            let interpClass = '';
+            const fnum = Number(final);
+            
+            if(fnum >= 4.5) {
+                interp = 'Excelente (4.5–5.0)';
+                interpClass = 'bg-success text-white';
+            } else if(fnum >= 3.5) {
+                interp = 'Bueno (3.5–4.49)';
+                interpClass = 'bg-info text-dark';
+            } else if(fnum >= 2.5) {
+                interp = 'Aceptable (2.5–3.49)';
+                interpClass = 'bg-warning text-dark';
+            } else if(fnum >= 1.5) {
+                interp = 'Deficiente (1.5–2.49)';
+                interpClass = 'bg-danger text-white';
+            } else {
+                interp = 'Inaceptable (0–1.49)';
+                interpClass = 'bg-dark text-white';
+            }
+            
+            document.getElementById('score-interpretation').innerText = interp;
+            document.getElementById('score-interpretation').className = `interpretation ${interpClass}`;
+            
+            // Update chart
+            updateScoreChart(vals);
+        });
+        
+        // Chart for score distribution
+        function updateScoreChart(vals) {
+            const ctx = document.getElementById('score-chart').getContext('2d');
+            
+            // Destroy existing chart if it exists
+            if(window.scoreChart) {
+                window.scoreChart.destroy();
+            }
+            
+            const labels = Object.keys(vals).map(key => {
+                const names = {
+                    'normas': 'Normas',
+                    'modelos': 'Modelos',
+                    'estandares': 'Estándares',
+                    'codigo': 'Código',
+                    'pruebas': 'Pruebas',
+                    'doc': 'Documentación'
+                };
+                return names[key];
+            });
+            
+            const data = Object.values(vals);
+            const backgroundColors = [
+                'rgba(255, 99, 132, 0.7)',
+                'rgba(54, 162, 235, 0.7)',
+                'rgba(255, 206, 86, 0.7)',
+                'rgba(75, 192, 192, 0.7)',
+                'rgba(153, 102, 255, 0.7)',
+                'rgba(255, 159, 64, 0.7)'
+            ];
+            
+            window.scoreChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Puntuación por componente',
+                        data: data,
+                        backgroundColor: backgroundColors,
+                        borderColor: backgroundColors.map(color => color.replace('0.7', '1')),
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 5,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Initialize an empty chart
+        function initChart() {
+            const ctx = document.getElementById('score-chart').getContext('2d');
+            window.scoreChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Normas', 'Modelos', 'Estándares', 'Código', 'Pruebas', 'Documentación'],
+                    datasets: [{
+                        label: 'Puntuación por componente',
+                        data: [0, 0, 0, 0, 0, 0],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.7)',
+                            'rgba(54, 162, 235, 0.7)',
+                            'rgba(255, 206, 86, 0.7)',
+                            'rgba(75, 192, 192, 0.7)',
+                            'rgba(153, 102, 255, 0.7)',
+                            'rgba(255, 159, 64, 0.7)'
+                        ]
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 5
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Initialize chart on page load
+        document.addEventListener('DOMContentLoaded', initChart);
+        
+        // PDF generation (simple APA-style)
+        document.getElementById('generate-pdf').addEventListener('click', async () => {
+            const authors = document.getElementById('authors').value || 'Integrantes';
+            const videoLink = document.getElementById('video-link').value || 'No proporcionado';
+            // Get last calculated score
+            const final = document.getElementById('final-score').innerText || '---';
+            
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            const title = 'Calidad de Software - Proyecto Final';
+            
+            // Portada
+            doc.setFontSize(18);
+            doc.text(title, 20, 30);
+            doc.setFontSize(12);
+            doc.text(`Autores: ${authors}`, 20, 40);
+            doc.text(`Fecha: ${new Date().toLocaleDateString()}`, 20, 48);
+            doc.text('Asignatura: ACA - Calidad de Software', 20, 56);
+            
+            doc.addPage();
+            
+            // Resumen
+            doc.setFontSize(14);
+            doc.text('Resumen', 20, 20);
+            doc.setFontSize(11);
+            const resumen = 'Este documento describe el desarrollo y evaluación de un aplicativo educativo de demostración para Calidad de Software. Se presentan normas, modelos, estándares, prácticas de programación, plan de pruebas y resultados cuantitativos de la evaluación (escala 0–5).';
+            doc.text(doc.splitTextToSize(resumen, 170), 20, 30);
+            
+            // Metodología
+            doc.setFontSize(14);
+            doc.text('Metodología', 20, 70);
+            doc.setFontSize(11);
+            const metodo = 'Se diseñó un aplicativo demo (quiz) y un modelo cuantitativo ponderado que evalúa: Normas, Modelos, Estándares, Código, Pruebas y Documentación. Las pruebas automatizadas se ejecutaron en el aplicativo demo para estimar la calidad en el criterio de pruebas.';
+            doc.text(doc.splitTextToSize(metodo, 170), 20, 80);
+            
+            // Resultados
+            doc.setFontSize(14);
+            doc.text('Resultados', 20, 120);
+            doc.setFontSize(11);
+            doc.text(`Calificación final (0–5): ${final}`, 20, 130);
+            doc.text(`Link del video: ${videoLink}`, 20, 140);
+            
+            // Conclusiones y Recomendaciones
+            doc.setFontSize(14);
+            doc.text('Conclusiones y Recomendaciones', 20, 160);
+            doc.setFontSize(11);
+            const conclus = 'La aplicación demuestra cómo medir la calidad de software en entornos educativos. Se recomienda integrar CI/CD, aumentar cobertura de pruebas y mejorar documentación para alcanzar calificaciones superiores. La calidad de software impacta directamente en la experiencia del usuario final y en los costos de mantenimiento.';
+            doc.text(doc.splitTextToSize(conclus, 170), 20, 170);
+            
+            // Referencias
+            doc.setFontSize(12);
+            doc.text('Referencias (ejemplos): ISO/IEC 25010; CMMI; WCAG; IEEE Guide to Software Quality.', 20, 200);
+            
+            // Save
+            const filename = 'Proyecto_Calidad_Software_APA.pdf';
+            doc.save(filename);
+            document.getElementById('pdf-status').innerHTML = `<div class="alert alert-success mt-2">PDF generado: ${filename} (se descargó automáticamente)</div>`;
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Floating button to scroll to top
+        document.querySelector('.floating-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
